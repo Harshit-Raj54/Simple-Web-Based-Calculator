@@ -39,3 +39,64 @@
     box-shadow: -8px -8px 15px;
     cursor: pointer;
 }
+
+.calculator,
+.container,
+.main,
+.box {
+    max-width: 100%;
+}
+
+button {
+    min-width: 50px;
+    min-height: 45px;
+}
+
+/* Display auto fit */
+input,
+#display {
+    width: 100%;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .calculator,
+    .container,
+    .main,
+    .box {
+        width: 90%;
+        margin: auto;
+    }
+
+    button {
+        font-size: 1.1rem;
+        padding: 10px;
+    }
+
+    input,
+    #display {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calculator,
+    .container,
+    .main,
+    .box {
+        width: 95%;
+        padding: 10px;
+    }
+
+    button {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    input,
+    #display {
+        font-size: 1.2rem;
+        height: 45px;
+    }
+}
+
